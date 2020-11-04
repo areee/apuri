@@ -32,6 +32,6 @@ function generateResultText() {
 function copyToClipboardAction() {
   console.log("Copy");
   resultTextArea.select();
-  document.execCommand("copy");
+  document.execCommand('copy');
   alert("Copied!");
 }
