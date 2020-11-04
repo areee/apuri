@@ -7,6 +7,9 @@ let resultTextArea = document.getElementById("resultTextArea");
 let goButton = document.getElementById("goButton");
 goButton.addEventListener("click", generateResultText);
 
+let copyButton = document.getElementById("copyButton");
+copyButton.addEventListener("click", copyToClipboardAction);
+
 function generateResultText() {
   let lines = editableTextArea.value.split("\n");
 
@@ -24,4 +27,11 @@ function generateResultText() {
   }
   console.log("result: \n" + result);
   resultTextArea.value = result;
+}
+
+function copyToClipboardAction() {
+  console.log("Copy");
+  resultTextArea.select();
+  document.execCommand("copy");
+  alert("Copied!");
 }
