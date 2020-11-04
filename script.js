@@ -29,7 +29,8 @@ function generateResultText() {
   resultTextArea.value = result;
 }
 
-function copyToClipboardAction() {
+function copyToClipboardAction(event) {
+  event.preventDefault();
   console.log("Copy");
   resultTextArea.select();
   document.execCommand('copy');
