@@ -18,21 +18,17 @@ function generateResultText() {
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i];
     let lineResult = prefixInput.value + line + suffixInput.value;
-    console.log(lineResult);
     result += lineResult;
 
     if (i != lines.length - 1) {
       result += "\n";
     }
   }
-  console.log("result: \n" + result);
   resultTextArea.value = result;
 }
 
-function copyToClipboardAction(event) {
-  event.preventDefault();
-  console.log("Copy");
+function copyToClipboardAction() {
   resultTextArea.select();
-  document.execCommand('copy');
-  alert("Copied!");
+  document.execCommand("copy");
+  alert("Copied:\n" + resultTextArea.value);
 }
