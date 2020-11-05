@@ -15,32 +15,33 @@
 <body>
     <div class="jumbotron text-center">
         <h1>Apuri</h1>
-        <p>Resize this responsive page to see the effect!</p>
+        <p>Koodarin pikkuapulainen tekstin (esim. koodin) kommentointiin</p>
     </div>
 
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
-                <h3>Column 1</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                <h3>Ohje</h3>
+                <p>Lisää tekstisi (kuten koodiriviesi) eteen ja perään tarvitsemasi merkit. Voit esimerkiksi kommentoida koodia (//) tai lisätä .NET-ympäristössä XML-kommentointia (///).</p>
+                <h3>Itse asia</h3>
                 <div class="form-group">
-                    <label for="prefixInput">Prefix:</label>
+                    <label for="prefixInput">Tekstin eteen lisättävä sisältö:</label>
                     <input type="text" class="form-control" id="prefixInput">
                 </div>
                 <div class="form-group">
-                    <label for="editableTextArea">Editable text:</label>
+                    <label for="editableTextArea">Muokattava teksti:</label>
                     <textarea class="form-control" rows="5" id="editableTextArea"></textarea>
                 </div>
                 <div class="form-group">
-                    <label for="suffixInput">Suffix:</label>
+                    <label for="suffixInput">Tekstin perään lisättävä sisältö:</label>
                     <input type="text" class="form-control" id="suffixInput">
                 </div>
-                <button type="button" class="btn btn-primary btn-block" id="goButton">Go!</button>
+                <button type="button" class="btn btn-primary btn-block" id="goButton">Käynnistä!</button>
                 <div class="form-group">
-                    <label for="resultTextArea">Result:</label>
+                    <label for="resultTextArea">Lopputulos:</label>
                     <textarea class="form-control" rows="5" id="resultTextArea"></textarea>
                 </div>
-                <button type="button" class="btn btn-primary btn-block" id="copyButton">Copy to the clipboard</button>
+                <button type="button" class="btn btn-primary btn-block" id="copyButton">Kopioi leikepöydälle</button>
             </div>
         </div>
     </div>

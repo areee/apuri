@@ -30,5 +30,5 @@ function generateResultText() {
 function copyToClipboardAction() {
   resultTextArea.select();
   document.execCommand("copy");
-  alert("Copied:\n" + resultTextArea.value);
+  alert("Kopioitu teksti:\n" + resultTextArea.value);
 }
